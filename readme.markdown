@@ -1,15 +1,12 @@
 # lexicographic-integer
 
-create lexicographic string keys for positive integers without zero-padding
+crie chaves de string lexicográficas para inteiros positivos sem preenchimento de zero
 
-At most, a number will take 10 bytes to store (2 more bytes than a regular
-double) but all numbers less than 251 only take a single byte.
+No máximo, um número levará 10 bytes para armazenar (2 bytes a mais do que um duplo regular), mas todos os números menores que 251 ocuparão apenas um único byte.
 
-[![build status](https://secure.travis-ci.org/substack/lexicographic-integer.png)](http://travis-ci.org/substack/lexicographic-integer)
+# exemplo
 
-# example
-
-## pack
+## pacote
 
 ``` js
 var lexi = require('lexicographic-integer');
@@ -22,22 +19,22 @@ output:
 [ 252, 47, 62 ]
 ```
 
-## unpack
+## desempacotar
 
-To convert the arrays back into integers, just do `.unpack()`:
+Para converter as matrizes de volta em inteiros, basta fazer `.unpack()`:
 
 ``` js
 var lexi = require('lexicographic-integer');
 console.log(lexi.unpack([ 252, 47, 62 ]));
 ```
 
-output:
+saída:
 
 ```
 12345
 ```
 
-## hex list
+## lista hexadecimal
 
 ``` js
 var lexi = require('lexicographic-integer');
@@ -65,7 +62,7 @@ for (var n = 21378213; n < Number.MAX_VALUE; n *= 1513254198219212) {
 }
 ```
 
-output:
+saída:
 
 ```
 0 '00'
@@ -112,7 +109,7 @@ output:
 5.601408696719025e+295 'fffc02bb0af68aa1140f'
 ```
 
-# methods
+# métodos
 
 ``` js
 var lexi = require('lexicographic-integer')
@@ -130,7 +127,7 @@ If `encoding` is `'hex'`, return a lexicographic hex string for the integer `n`.
 Convert an array of `bytes` returned by `.pack()` back into the original
 javascript number.
 
-# install
+# instalação
 
 With [npm](https://npmjs.org) do:
 
@@ -138,6 +135,6 @@ With [npm](https://npmjs.org) do:
 npm install lexicographic-integer
 ```
 
-# license
+# licença
 
 MIT
