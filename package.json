@@ -11,9 +11,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/substack/lexicographic-integer.git"
+    "url": "git://github.com/isaccanedo/lexicographic-integer"
   },
-  "homepage": "https://github.com/substack/lexicographic-integer",
+  "homepage": "https://github.com/isaccanedo/lexicographic-integer",
   "keywords": [
     "lexicographic",
     "encoding",
@@ -22,9 +22,7 @@
     "integer"
   ],
   "author": {
-    "name": "James Halliday",
-    "email": "mail@substack.net",
-    "url": "http://substack.net"
+    "name": "Isac Canedo"
   },
   "license": "MIT"
 }
